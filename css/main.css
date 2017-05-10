@@ -1,3 +1,11 @@
+* {
+  /* height/width dictate size of content
+  box-sizing: content-box; */
+
+  /* height/width dictate size of box, border INward */
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -9,4 +17,24 @@ strong {
 
 .box {
   background-color: tomato;
+  width: 80%;
+  max-width: 800px;
+  /* Don't use height! Causes trouble.
+  If you must, use "height: auto;"
+  height: 300px;*/
+  padding: 15px;
+  /*padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding: 20px 0 30px 50px;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #000000;*/
+  border: 5px dashed #000000;
+  /*border-left-width: 15px;
+  border-radius: 5px;*/
+  margin-left: auto;
+  margin-right: auto;
+
 }
